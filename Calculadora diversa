@@ -1,0 +1,42 @@
+print('\n\t CAUCULADORA v 1.0\n')
+print("Digite 'q' a qualquer momento para sair do programa\n")
+while True:
+    escolha = str(input("Escolha a operação:\n (bhaskara, hipotenusa, media bimestral)"))
+    if escolha == 'q':
+        break
+    elif escolha == "bhaskara":
+        print("============================")
+        print("\t\t BHASKARA")
+        print("============================\n\n")
+
+        a = int(input('Digite o primeiro numero'))
+        b = int(input('Digite o segundo numero'))
+        c = int(input('Digite o terceiro numero'))
+        resul = ((-b +((b**2 - 4*a*c)**0.5))/(2*a)), ((-b -((b**2 - 4*a*c)**0.5))/(2*a))
+
+        print("resultado:", resul)
+
+    else:
+
+        if escolha == "hipotenusa":
+            print("============================")
+            print("\t\t HIPOTENUSA")
+            print("============================\n\n")
+
+            num1 = float(input("Cateto Oposto"))
+            num2 = float(input("Cateto Adjacente"))
+            resul = ((num1**2 + num2**2)**0.5)
+            print("resultado:", resul)
+
+        else:
+
+            if escolha == "media bimestral":
+             print("============================")
+            print("\t\t MÉDIA BIMESTRAL")
+            print("============================\n\n")
+
+            num1 = float(input('Nota AV1'))
+            num2 = float(input('Nota AV2'))
+            num3 = float(input('Nota AV3'))
+            resul = ((num1 + num2 + num3)/3)
+            print('Sua média bimestral é:', resul)
